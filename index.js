@@ -85,13 +85,19 @@ function createCard(i) {
     
         // Read Button
         const readButton = document.createElement("button");
-        readButton.textContent = "Read";
+        if (thisBook.read === "Read") {
+            readButton.textContent = "Unread";
+        } else {
+            readButton.textContent = "Read";
+        }
         readButton.addEventListener('click', function() {
             if (thisBook.read === "Read") {
                 thisBook.read = "Unread";
+                readButton.textContent = "Read";
             }
             else {
                 thisBook.read = "Read";
+                readButton.textContent = "Unread";
             };
             readLabel.textContent = "Pages: " + thisBook.read;
         });
