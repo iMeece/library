@@ -65,7 +65,7 @@ function createCard(i) {
     
         // Book Read
         const readLabel = document.createElement("label");
-        readLabel.textContent = "Pages: " + thisBook.read;
+        readLabel.textContent = "Status: " + thisBook.read;
         cardContainer.appendChild(readLabel);
     
         // Button Container
