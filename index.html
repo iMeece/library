@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Button Display Section -->
+    <section class="container">
+        <div id="button-display" class="flex">
+            <button id="add-book-button">New Book</button>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Book Display Section -->
+    <section id="book-display" class="flex container">
+        
+    </section>
+
+    <!-- Popup -->
+    <section id="popup" class="popup popup-remove">
+        <form id="popup-form" class="popup-flex" action="#" value="add-book">
+            <div class="flex">
+                <label>Enter Book Title: </label>
+                <input type="text" name="book-title" required>
+            </div>
+            <div class="flex">
+                <label>Enter Author Name: </label>
+                <input type="text" name="author-name" required>
+            </div>
+            <div class="flex">
+                <label>Enter Book Pages: </label>
+                <input type="number" name="book-pages" required>
+            </div>
+            <div class="flex radio-flex">
+                <div>
+                    <label>Read: </label>
+                    <input type="radio" name="book-read" value="Read" checked required>
+                </div>
+                <div>
+                    <label>Unread: </label>
+                    <input type="radio" name="book-read" value="Unread" required>
+                </div>
+            </div>
+            <div class="submit-flex">
+                <input id="submit-button" type="submit" value="Add Book">
+                <button id="cancel-button">Cancel</button>
+            </div>
+        </form>
+        
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
